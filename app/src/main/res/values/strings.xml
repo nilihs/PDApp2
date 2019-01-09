@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PD App 2</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="spinnerItems">
+        <item>1 Pax</item>
+        <item>2 Pax</item>
+        <item>3 Pax</item>
+        <item>4 Pax</item>
+        <item>5 Pax</item>
+        <item>6 Pax</item>
+        <item>7 Pax</item>
+        <item>8 Pax</item>
+        <item>9 Pax</item>
+        <item>10 Pax</item>
+    </string-array>
+
+</resources>

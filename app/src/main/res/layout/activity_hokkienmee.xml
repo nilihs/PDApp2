@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sg.edu.rp.c346.pdapp2.eventinfo"
+    android:background="@drawable/androidbackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:background="@drawable/custom_button"/>
+
+            <TextView
+                android:id="@+id/textViewFoodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="8dp"
+                android:text="Hokkien Mee"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/ImageViewPic"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                app:srcCompat="@drawable/localfood1" />
+
+            <TextView
+                android:id="@+id/textViewDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="After a short-lived retirement, the legendary Ah Hock of food haven Chomp Chomp returned, spatula in hand, wok at the ready. And thank goodness for that, because we wouldn’t want to live in a world without his flavour-packed seafood hokkien mee. If you like thinner noodles in your hokkien mee and a generous serving of seafood, this is your go-to stall if you live in the Serangoon area. And, we hear if he likes you enough, he might give you his number to order in advance and skip the queue." />
+
+            <Spinner
+                android:id="@+id/spinnerPax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinnerItems"
+                android:textAlignment="center"/>
+
+            <DatePicker
+                android:id="@+id/datePickerLocalFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <TimePicker
+                android:id="@+id/timePickerLocalFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner" />
+
+            <Button
+                android:id="@+id/buttonConfirmBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="Confirm" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

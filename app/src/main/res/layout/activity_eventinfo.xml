@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sg.edu.rp.c346.pdapp2.eventinfo"
+    android:background="@drawable/androidbackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:background="@drawable/custom_button" />
+
+            <TextView
+                android:id="@+id/textViewEventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="8dp"
+                android:text="Prudential Marina Bay Carnival"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                />
+
+            <ImageView
+                android:id="@+id/ImageViewPic"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                app:srcCompat="@drawable/prudential" />
+
+            <TextView
+                android:id="@+id/textViewEventDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Opening Dates"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDesc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="22 December 2018 to 24 March 2019" />
+
+            <TextView
+                android:id="@+id/textViewDesc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Opening Hours"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDesc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="4pm to 11pm daily (Last entry at 10:30pm)" />
+
+            <TextView
+                android:id="@+id/textViewDesc5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join us in our exciting carnival boasting more than 40 rides and games from Europe and around the world"
+                android:padding="16dp"
+                android:gravity="center"/>
+
+            <DatePicker
+                android:id="@+id/datePickerEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"/>
+
+            <Button
+                android:id="@+id/buttonConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:background="@drawable/custom_button"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
